@@ -16,7 +16,7 @@ And('Click submit btn', () =>{
     cy.get('.Button__StyledDefaultButton-sc-44gl5i-0').click()
 })
 Then('User logged in', () =>{
-    cy.wait(8000)
+    cy.wait(10000)
     cy.url().should('contain','https://portal.telnyx.com/#/app/home')
 })
 When('Click submit button', () =>{
