@@ -10,11 +10,18 @@ jobs:
         uses: actions/setup-node@v2
         with:
             node:version: '14'
+      - name: Cache NPM modules
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: npm@${{ matrix.cypress-version }}
       - name: Cache Cypress binaries
         uses: actions/cache@v2
         with:
           path: ~/.cache/Cypress
           key: cypress@${{ matrix.cypress-version }}
+      - name: Change owner
+        run: "chown root: ."
       - name: Install dependencies
         run: npm install
       - name: Install @badeball/cypress-cucumber-preprocessor
