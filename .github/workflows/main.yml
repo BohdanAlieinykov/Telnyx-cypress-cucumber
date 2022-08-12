@@ -26,6 +26,7 @@ jobs:
         with:
           path: ~/.cache/Cypress
           key: cypress@${{ matrix.cypress-version }}
+      - name: Dependencies
         env:
           CYPRESS_INSTALL_BINARY: "0"
           CUCUMBER_JSON_FORMATTER_URL: https://github.com/cucumber/common/releases/download/json-formatter%2Fgo%2Fv19.0.0/cucumber-json-formatter-windows-amd64
@@ -37,7 +38,7 @@ jobs:
            chmod +x /usr/bin/cucumber-json-formatter
       - name: Cypress run
         run: npm run cypress:execution
-      - name: Cypress run
+      - name: Cypress run2
         uses: cypress-io/github-action@v2
         with:
             config-file: cypress.config.js
