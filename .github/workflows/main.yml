@@ -11,7 +11,13 @@ jobs:
         with:
             node:version: '14'
       - name: Install dependencies
-        run: npm install       
+        run: npm install
+      - name: Install @badeball/cypress-cucumber-preprocessor
+        run: npm install @badeball/cypress-cucumber-preprocessor
+      - name: Install @bahmutov/cypress-esbuild-preprocessor esbuild
+        run: npm i -D cypress @bahmutov/cypress-esbuild-preprocessor esbuild
+      - name: Cypress run
+        run: npm run cypress:execution
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
