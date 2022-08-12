@@ -16,6 +16,13 @@ jobs:
         run: npm install @badeball/cypress-cucumber-preprocessor
       - name: Install @bahmutov/cypress-esbuild-preprocessor esbuild
         run: npm i -D cypress @bahmutov/cypress-esbuild-preprocessor esbuild
+        env:
+          CUCUMBER_JSON_FORMATTER_URL: https://github.com/cucumber/common/releases/download/json-formatter%2Fgo%2Fv19.0.0/cucumber-json-formatter-windows-amd64
+          run: |
+           npm install
+           curl -L $CUCUMBER_JSON_FORMATTER_URL > cucumber-json-formatter.exe
+           chmod +x ./cucumber-json-formatter.exe
+           echo $GITHUB_WORKSPACE >> $GITHUB_PATH
       - name: Cypress run
         run: npm run cypress:execution
       - name: Cypress run
