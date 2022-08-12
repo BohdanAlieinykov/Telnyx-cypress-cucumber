@@ -1,0 +1,1048 @@
+[
+  {
+    "description": "    Feature Description",
+    "elements": [
+      {
+        "description": "",
+        "id": "contact-us;error-message-appears-when-user-try-send-'contact-us'-form-without-filled-company-website-field",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Error message appears when user try send 'Contact us' form without filled company-website field",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "name": "User opens ContactUs page",
+            "result": {
+              "duration": 12110000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 7,
+            "name": "User accept cookie \u0026 choose reason for contact - support",
+            "result": {
+              "duration": 2511000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 8,
+            "name": "User first name input \"Albert\"",
+            "result": {
+              "duration": 3132000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 9,
+            "name": "User last name input \"Albert\"",
+            "result": {
+              "duration": 1900000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 10,
+            "name": "User business email input \"Albert@albert.com\"",
+            "result": {
+              "duration": 1840000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 11,
+            "name": "User click submit button",
+            "result": {
+              "duration": 926000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 12,
+            "name": "Error message Must be a url. appears",
+            "result": {
+              "duration": 610000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "contact-us;error-message-appears-when-user-try-send-'contact-us'-form-without-filled-email-field",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Error message appears when user try send 'Contact us' form without filled email field",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 15,
+            "name": "User opens ContactUs page",
+            "result": {
+              "duration": 8387000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 16,
+            "name": "User choose reason for contact - support",
+            "result": {
+              "duration": 1168000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 17,
+            "name": "User first name input \"Albert\"",
+            "result": {
+              "duration": 1117000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 18,
+            "name": "User last name input \"Albert\"",
+            "result": {
+              "duration": 1218000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 19,
+            "name": "User company website input mysite.com",
+            "result": {
+              "duration": 1867000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 20,
+            "name": "User click submit button",
+            "result": {
+              "duration": 1072000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 21,
+            "name": "Error message Must be valid email. appears",
+            "result": {
+              "duration": 340000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "contact-us;error-message-appears-when-user-try-send-'contact-us'-form-without-filled-firstname-field",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "Error message appears when user try send 'Contact us' form without filled Firstname field",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 24,
+            "name": "User opens ContactUs page",
+            "result": {
+              "duration": 6967000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 25,
+            "name": "User choose reason for contact - support",
+            "result": {
+              "duration": 1084000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 26,
+            "name": "User last name input \"Albert\"",
+            "result": {
+              "duration": 1150000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 27,
+            "name": "User company website input mysite.com",
+            "result": {
+              "duration": 2165000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 28,
+            "name": "User business email input \"Albert@albert.com\"",
+            "result": {
+              "duration": 1708000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 29,
+            "name": "User click submit button",
+            "result": {
+              "duration": 995000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 30,
+            "name": "Error message This field is required. appears",
+            "result": {
+              "duration": 274000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "contact-us;error-message-appears-when-user-try-send-'contact-us'-form-without-filled-lastname-field",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "Error message appears when user try send 'Contact us' form without filled Lastname field",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 33,
+            "name": "User opens ContactUs page",
+            "result": {
+              "duration": 9644000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 34,
+            "name": "User choose reason for contact - support",
+            "result": {
+              "duration": 1268000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 35,
+            "name": "User first name input \"Albert\"",
+            "result": {
+              "duration": 1109000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 36,
+            "name": "User company website input mysite.com",
+            "result": {
+              "duration": 2021000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 37,
+            "name": "User business email input \"Albert@albert.com\"",
+            "result": {
+              "duration": 1822000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 38,
+            "name": "User click submit button",
+            "result": {
+              "duration": 743000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 39,
+            "name": "Error message This field is required. for Lastname appears",
+            "result": {
+              "duration": 403000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "contact-us;user-directed-on-'contact-us'-form-by-click-'talk-to-an-expert'-button-on-main-page.",
+        "keyword": "Scenario",
+        "line": 41,
+        "name": "User directed on 'contact us' form by click 'Talk to an expert' button on main page.",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 42,
+            "name": "User opens main page",
+            "result": {
+              "duration": 8727000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 43,
+            "name": "User click on Talk to an expert button",
+            "result": {
+              "duration": 1596000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 44,
+            "name": "User on the Contact us page",
+            "result": {
+              "duration": 2388000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "contact-us;primary-interest-drop-down-list-appears-when-user-choose-reason-for-contact---sales-inquiry",
+        "keyword": "Scenario",
+        "line": 46,
+        "name": "Primary interest drop-down list appears when user choose reason for contact - Sales inquiry",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 47,
+            "name": "User opens ContactUs page",
+            "result": {
+              "duration": 10069000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 48,
+            "name": "User choose reason for contact - Sales inquiry",
+            "result": {
+              "duration": 1010000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 49,
+            "name": "Primary interest drop-down appears",
+            "result": {
+              "duration": 305000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "contact-us;error-message-appears-when-user-try-send-'contact-us'-form-without-selected-'primary-interest'-field",
+        "keyword": "Scenario",
+        "line": 51,
+        "name": "Error message appears when user try send 'Contact us' form without selected 'Primary interest' field",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 52,
+            "name": "User opens ContactUs page",
+            "result": {
+              "duration": 7498000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 53,
+            "name": "User choose reason for contact - Sales inquiry",
+            "result": {
+              "duration": 1050000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 54,
+            "name": "User first name input \"Albert\"",
+            "result": {
+              "duration": 1178000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 55,
+            "name": "User last name input \"Albert\"",
+            "result": {
+              "duration": 1158000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 56,
+            "name": "User business email input \"Albert@albert.com\"",
+            "result": {
+              "duration": 1724000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 57,
+            "name": "User company website input mysite.com",
+            "result": {
+              "duration": 1589000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 58,
+            "name": "User click submit button",
+            "result": {
+              "duration": 783000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 59,
+            "name": "Error message This field is required. for Primary interest appears",
+            "result": {
+              "duration": 618000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "contact-us",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Contact Us",
+    "uri": "cypress\\e2e\\contactUs.feature"
+  },
+  {
+    "description": "    User can login in account\n    User can't login with empty input\n    Error message appears when user email input without @\n    List of autorization methods appears by click on 'Log in with another OAuth Provider' button",
+    "elements": [
+      {
+        "description": "",
+        "id": "user-login;sucess-login",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Sucess login",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 8,
+            "name": "User opens login page",
+            "result": {
+              "duration": 23617000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 9,
+            "name": "User enter the email 'ejuki038@gmail.com'",
+            "result": {
+              "duration": 2940000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 10,
+            "name": "User enter the password 'PaSwOrD12-34'",
+            "result": {
+              "duration": 1546000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 11,
+            "name": "Click submit btn",
+            "result": {
+              "duration": 977000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 12,
+            "name": "User logged in",
+            "result": {
+              "duration": 9068000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-login;error-message-appears-when-user-try-login-with-empty-input",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Error message appears when user try login with empty input",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 15,
+            "name": "User opens login page",
+            "result": {
+              "duration": 17045000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 16,
+            "name": "Click submit btn",
+            "result": {
+              "duration": 930000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 17,
+            "name": "Click submit btn",
+            "result": {
+              "duration": 966000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 18,
+            "name": "Error message appears",
+            "result": {
+              "duration": 329000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-login;error-message-'please-enter-a-valid-email-address.'-appears-when-user-email-input-without-'@'",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Error message 'Please enter a valid email address.' appears when user email input without '@'",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 21,
+            "name": "User opens login page",
+            "result": {
+              "duration": 17079000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 22,
+            "name": "User enter the email without \"@\": 'ejuki038gmail.com'",
+            "result": {
+              "duration": 3751000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 23,
+            "name": "User enter the password 'PaSwOrD12-34'",
+            "result": {
+              "duration": 1304000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 24,
+            "name": "Error message appears",
+            "result": {
+              "duration": 147000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-login;list-with-another-autorization-methods-appears-when-user-click-'log-in-with-another-oauth-provider'-button",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "List with another autorization methods appears when user click 'Log in with another OAuth Provider' button",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 27,
+            "name": "User opens login page",
+            "result": {
+              "duration": 16468000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 28,
+            "name": "User click on 'Log in with another OAuth Provider'",
+            "result": {
+              "duration": 1133000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 29,
+            "name": "List of another autorization methods appears",
+            "result": {
+              "duration": 652000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-login;user-directed-on-github-login-form-by-click-[log-in-with-github]-button",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "User directed on Github login form by click [Log in with Github] button",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 32,
+            "name": "User opens login page",
+            "result": {
+              "duration": 13307000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 33,
+            "name": "User click on 'Log in with another OAuth Provider'",
+            "result": {
+              "duration": 868000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 34,
+            "name": "User click on Log in with Github button",
+            "result": {
+              "duration": 5315000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 35,
+            "name": "Sign in with Github form appears",
+            "result": {
+              "duration": 293000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-login;user-directed-on-linkedin-login-form-by-click-[log-in-with-linkedin]-button",
+        "keyword": "Scenario",
+        "line": 37,
+        "name": "User directed on LinkedIn login form by click [Log in with LinkedIn] button",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 38,
+            "name": "User opens login page",
+            "result": {
+              "duration": 17959000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 39,
+            "name": "User click on 'Log in with another OAuth Provider'",
+            "result": {
+              "duration": 746000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 40,
+            "name": "User click on 'Log in with LinkedIn' button",
+            "result": {
+              "duration": 5853000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 41,
+            "name": "Sign in with LinkedIn form appears",
+            "result": {
+              "duration": 447000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-login;user-directed-on-facebook-login-form-by-click-[log-in-with-facebook]-button",
+        "keyword": "Scenario",
+        "line": 43,
+        "name": "User directed on Facebook login form by click [Log in with Facebook] button",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 44,
+            "name": "User opens login page",
+            "result": {
+              "duration": 15831000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 45,
+            "name": "User click on 'Log in with another OAuth Provider'",
+            "result": {
+              "duration": 1107000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 46,
+            "name": "User click on Log in with Facebook button",
+            "result": {
+              "duration": 4523000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 47,
+            "name": "Sign in with Facebook form appears",
+            "result": {
+              "duration": 266000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-login;user-directed-on-reset-password-page-by-click-'forgot-your-password?'-button",
+        "keyword": "Scenario",
+        "line": 49,
+        "name": "User directed on reset password page by click 'Forgot your password?' button",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 50,
+            "name": "User opens login page",
+            "result": {
+              "duration": 13739000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 51,
+            "name": "User click on Forgot your password? button",
+            "result": {
+              "duration": 1605000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 52,
+            "name": "User directed on password reset page",
+            "result": {
+              "duration": 456000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "user-login",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "User login",
+    "uri": "cypress\\e2e\\login.feature"
+  }
+]

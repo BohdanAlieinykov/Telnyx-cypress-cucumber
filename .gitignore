@@ -1,0 +1,8 @@
+*.mp4
+*.tiff
+*.avi
+*.flv
+*.mov
+*.wmv
+node_modules/
+dist/
