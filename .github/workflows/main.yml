@@ -15,8 +15,6 @@ jobs:
           curl -L $CUCUMBER_JSON_FORMATTER_URL > cucumber-json-formatter.exe
           chmod +x ./cucumber-json-formatter.exe
           echo $GITHUB_WORKSPACE >> $GITHUB_PATH
-      - name: Build
-        run: npm run build
       - name: Install @badeball/cypress-cucumber-preprocessor
         run: npm install @badeball/cypress-cucumber-preprocessor
       - name: Install @bahmutov/cypress-esbuild-preprocessor esbuild
