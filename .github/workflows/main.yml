@@ -6,7 +6,7 @@ on:
     branches: [ main ]
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v2
@@ -18,13 +18,14 @@ jobs:
       run: npm install @badeball/cypress-cucumber-preprocessor --save-dev
     - name: Install multiple-cucumber-html-reporter
       run: npm i multiple-cucumber-html-reporter --save-dev
-    - name: Deps
+    - name: Dependencies
+      shell: bash
       env:
-          CYPRESS_INSTALL_BINARY: "0"
-          CUCUMBER_JSON_FORMATTER_URL: https://github.com/cucumber/common/releases/download/json-formatter%2Fgo%2Fv19.0.0/cucumber-json-formatter-linux-amd64
-      run: 
-          env -u CYPRESS_INSTALL_BINARY npx cypress install && \
-          curl -L $CUCUMBER_JSON_FORMATTER_URL > /usr/bin/cucumber-json-formatter && \
-          chmod +x /usr/bin/cucumber-json-formatter
+          CUCUMBER_JSON_FORMATTER_URL: https://github.com/cucumber/common/releases/download/json-formatter%2Fgo%2Fv19.0.0/cucumber-json-formatter-windows-amd64
+      run: |
+          npm install
+          curl -L $CUCUMBER_JSON_FORMATTER_URL > cucumber-json-formatter.exe
+          chmod +x ./cucumber-json-formatter.exe
+          echo $GITHUB_WORKSPACE >> $GITHUB_PATH
     - name: Run tests
       run: npm run cypress:execution
