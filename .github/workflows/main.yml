@@ -3,33 +3,12 @@ name: Examples
 on: [push]
 
 jobs:
-  esbuild-cjs:
-    runs-on: ubuntu-20.04
-    container:
-      image: cypress/base:17.3.0
+  cypress-run:
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Cache NPM modules
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: npm
-      - name: Cache Cypress binaries
-        uses: actions/cache@v2
-        with:
-          path: ~/.cache/Cypress
-          key: cypress
-      # In lack of native support, https://github.com/actions/checkout/issues/172.
-      - name: Make checkout sparse
-        run: |
-          shopt -s extglob
-          rm -rf examples/!(esbuild-cjs)
-          rm -rf !(examples)
-      - name: Install NPM modules
-        working-directory: examples/esbuild-cjs
-        run: npm install
-      - name: Run Cypress
-        working-directory: examples/esbuild-cjs
-        run: npx cypress run
-        
+      -name: Checkout
+       uses:actions/checkout@v1
+      -name: Cypress run
+       uses:cypress-io/github-action@v2
+       with:
+        start: npm start
