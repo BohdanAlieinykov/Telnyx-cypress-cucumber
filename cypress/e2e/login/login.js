@@ -45,7 +45,6 @@ And('User click on {string} button', () =>{
 })
 Then('Sign in with LinkedIn form appears', () =>{
     cy.get('.header__logo > li-icon > svg').should('be.visible')
-    cy.get('.header__content__heading').should('contain.text','Мы рады видеть вас снова!')
 })
 And('User click on Log in with Facebook button', () =>{
     cy.get('[aria-label="facebookForm"]').click()
