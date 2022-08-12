@@ -1,39 +1,31 @@
-name: Cypress test
-on: [push]
+name: cypress
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 jobs:
- cypress-run:
-    runs-on: ubuntu-latest
-    steps: 
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Install node
-        uses: actions/setup-node@v2
-        with:
-            node:version: '14'
-      - name: Cache Cypress binaries
-        uses: actions/cache@v2
-        with:
-          path: ~/.cache/Cypress
-          key: cypress@${{ matrix.cypress-version }}
-      - name: Install dependencies
-        run: npm install
-      - name: Install @badeball/cypress-cucumber-preprocessor
-        run: npm install @badeball/cypress-cucumber-preprocessor
-      - name: Install @bahmutov/cypress-esbuild-preprocessor esbuild
-        run: npm i -D cypress @bahmutov/cypress-esbuild-preprocessor esbuild
-        env:
-          CYPRESS_INSTALL_BINARY: "0"
+  test:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '14.x'
+    - name: Install dependencies
+      run: npm ci
+    - name: Install @badeball/cypress-cucumber-preprocessor
+      run: npm install @badeball/cypress-cucumber-preprocessor --save-dev
+    - name: Install multiple-cucumber-html-reporter
+      run: npm i multiple-cucumber-html-reporter --save-dev
+    - name: Dependencies
+      shell: bash
+      env:
           CUCUMBER_JSON_FORMATTER_URL: https://github.com/cucumber/common/releases/download/json-formatter%2Fgo%2Fv19.0.0/cucumber-json-formatter-windows-amd64
-          run: |
-           npm install --force && \
-           npm install --no-save cypress@${{ matrix.cypress-version }} && \
-           env -u CYPRESS_INSTALL_BINARY npx cypress install && \
-           curl -L $CUCUMBER_JSON_FORMATTER_URL > /usr/bin/cucumber-json-formatter && \
-           chmod +x /usr/bin/cucumber-json-formatter
-      - name: Cypress run
-        run: npm run cypress:execution
-      - name: Cypress run2
-        uses: cypress-io/github-action@v2
-        with:
-            config-file: cypress.config.js
-            browser: chrome
+      run: |
+          npm install
+          curl -L $CUCUMBER_JSON_FORMATTER_URL > cucumber-json-formatter.exe
+          chmod +x ./cucumber-json-formatter.exe
+          echo $GITHUB_WORKSPACE >> $GITHUB_PATH
+    - name: Run tests
+      run: npm run cypress:execution
